@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/Header.css">
 </head>
 <body>
-    <button id="show-header" onclick="toggleMenu()">HEADER</button>
+    <button id="show-header" onclick="toggleMenu()"><img
+							src="<%=request.getContextPath()%>/Img/icons8-menu-30.png"
+							alt="icon"></button>
     <header id="header">
         <div class="container">
             <h1>Arjun Rajawat</h1>

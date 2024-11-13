@@ -11,8 +11,8 @@ body {
 }
 
 /* Button Styles */
-button {
-    background-color: #333;
+button #show-header {
+    
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -27,6 +27,9 @@ button {
 
 #show-header {
     display: block;
+    align-items: left;
+    padding-left: 3rem;
+    
 }
 
 #header {
