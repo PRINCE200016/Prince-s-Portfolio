@@ -1,0 +1,564 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color classes for letters */
+.color1 { color: red; }
+.color2 { color: blue; }
+.color3 { color: green; }
+.color4 { color: orange; }
+.color5 { color: purple; }
+.color6 { color: magenta; }
+.color7 { color: cyan; }
+.color8 { color: lime; }
+.color9 { color: pink; }
+.color10 { color: yellow; }
+.color11 { color: gray; }
+.color12 { color: black; }
+
+/* Hero Section */
+#hero {
+    background-image: url('../Img/Untitled design-modified.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 110px 0 100px 0;
+    height: 100vh; /* Adjust height as necessary */
+    background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-right: 5rem; /* Removed extra spacing */
+}
+
+.hero-content {
+    text-align: left;
+    color: #ff0080; /* Adjust text color based on your image */
+    margin-left: 5rem; /* Adjust margin as needed */
+    position: absolute;
+    left: 2rem; /* Adjust left position as needed */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+}
+
+.hero-content h1 {
+    font-size: 120px;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 600;
+    line-height: 95px;
+    text-transform: uppercase;
+}
+
+.hero-content h2 {
+    font-size: 60px;
+    letter-spacing: -3px;
+    margin: 0;
+    font-weight: 400;
+    line-height: 88px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    color: black;
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+/* Body Styles */
+body {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+main .container {
+    padding: 5rem 2rem 2rem;
+}
+
+main h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+main p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+/* General styles for the main element */
+main {
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color for contrast */
+}
+
+/* Styles for the About section */
+#about {
+    background-color: #D9534F; /* Red background color similar to the screenshot */
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+#about h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+#about h2 .highlight {
+    color: #FFD700; /* Highlighted color for the "ABOUT ME" text */
+}
+
+#about p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #fff;
+}
+
+#about h2:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #FFD700; /* Underline color matching highlighted text */
+    margin: 10px auto 20px auto;
+}
+
+#about p .highlight {
+    color: #FFD700; /* Highlight specific words in the paragraph */
+}
+#skills {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Updated gap for spacing */
+}
+
+.skill-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.skill-item img {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+    transition: text-transform 0.3s;
+}
+
+.skill-item:hover p {
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 100%;
+    }
+
+
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 0;
+    background-color: #000000;
+}
+
+.projects {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#projects p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    background: #202020;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    flex: 1 1 30%;
+    max-width: 30%;
+    text-align: center;
+}
+.project-item:hover {
+    transform: translateY(-10px);
+}
+.project-item h3 {
+    font-size: 1.5rem;
+    color: #ef3210;
+    margin-bottom: 0.5rem;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.project-item a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ef3210;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-item a:hover {
+    background-color: #d21e08;
+      transform: translateY(-8px);
+      text-transform:uppercase;
+}
+.project-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+#about-img {
+    padding: 0px 0;
+    background-color: #f4f4f4;
+}
+
+.about-container {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #c0c0c0;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about-img img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+#contact {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contact-header h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header hr {
+  width: 50px;
+  margin: 0.5rem auto;
+  border: 1px solid #333;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  width: 30%;
+  text-align: center;
+}
+
+.contact-item i {
+  font-size: 2rem;
+  color: #e74c3c;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item h3 {
+  font-size: 1.2em;
+  margin: 0.5rem 0;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 1rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #c0392b;
+}
+
+.map-error {
+  margin-top: 2rem;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .contact-form {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-list {
+        flex-direction: column;
+    }
+
+    .project-item {
+        max-width: 100%;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+footer ul li {
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header .container, footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul, footer ul {
+        flex-direction: column;
+    }
+
+    header nav ul li, footer ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-content {
+        margin-left: 1rem; /* Adjust margin for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 80px; /* Adjust font size for smaller screens */
+    }
+
+    .hero-content h2 {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+}
