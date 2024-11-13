@@ -217,6 +217,42 @@
 
 
 	</main>
+<script>
+<script>
+document.addEventListener("wheel", function(e) {
+    e.preventDefault();
+    const sections = document.querySelectorAll("section");
+    let currentSectionIndex = 0;
+
+    // Identify the currently visible section
+    sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top < window.innerHeight) {
+            currentSectionIndex = index;
+        }
+    });
+
+    // Scroll to the next or previous section based on scroll direction
+    if (e.deltaY > 0) {
+        // Scroll down
+        if (currentSectionIndex < sections.length - 1) {
+            sections[currentSectionIndex + 1].scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    } else {
+        // Scroll up
+        if (currentSectionIndex > 0) {
+            sections[currentSectionIndex - 1].scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    }
+}, { passive: false });
+</script>
+
+
+</script>
 
 	<%@ include file="/jsp/Footer.jsp"%>
 </body>
